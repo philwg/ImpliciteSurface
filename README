@@ -1,0 +1,41 @@
+README de "implicites"
+
+Ce TP sur les surfaces implicites a été réalisé avec GLUT en C++ standard sans librairie particulière.
+L'archive contient trois fichiers :
+
+	+ impli.cpp : 	l'application à compiler et lancer
+	+ makefile  : 	pour faciliter la compilation avec les dépendances (taper make)
+	+ README	: 	ce fichier d'accompagnement
+
+
+----------------------------------------------------------------------------------
+Utilisation : 
+-------------
+
+Une fois l'application compilée, il suffit de lancer "./Launch"  dans un terminal.
+Une fenêtre OpenGL s'affiche vide.
+
+En cliquant avec le bouton gauche de la souris, on ajoute un centre d'influence.
+En cliquant avec le bouton droit de la souris, on selectionne et déplace un centre existant.
+
+On peut modifier l'affichage en temps réel avec les touches clavier suivantes :
+
+		'S'	-> 	pour augmenter la valeur du seuil (isovaleur)
+		's'	->	pour diminuer la valeur du seuil
+
+(défaut)'m'	-> 	pour mixer les potentiels par mélange 		(somme)
+		'u' ->	pour mixer les potentiels par intersection 	(min)
+		'i'	->	pour mixer les potentiels par union 		(max)
+
+(défaut)'M' ->	pour utiliser la fonction de potentiel de MURAKAMI
+		'N'	->	pour utiliser la fonction de potentiel de NISHIMURA
+		'W' ->	pour utiliser la fonction de potentiel de WYVILL
+		'B' ->	pour utiliser la fonction de potentiel de BLINN (a=1 et b=1)
+
+		'z'	->	pour l'affichage brut (1 sommet actif un point, 2 une ligne, 3 un triangle, 4 un carré)
+(défaut)'d' ->	pour l'affichage étendu au demi des arêtes
+		'p'	->	pour l'affichage fin = séparation proportionnelle aux valeurs de potentiel sur chaque arête
+
+Enjoy !
+
+Philippe GREULLET.
